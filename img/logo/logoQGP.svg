@@ -1,0 +1,13 @@
+<svg id="Groupe_1" data-name="Groupe 1" xmlns="http://www.w3.org/2000/svg" width="120" height="42" viewBox="15 54 120 42">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        font-family: "Good Times";
+      }
+    </style>
+  </defs>
+  <text id="Q" class="cls-1" x="14.625" y="93.412">Q</text>
+  <text id="G" class="cls-1" x="55.125" y="93.412">G</text>
+  <text id="P" class="cls-1" x="91.375" y="93.412">P</text>
+</svg>

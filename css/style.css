@@ -1,3 +1,121 @@
+@charset "UTF-8";
+/* Définition de la police SchibstedGrotesk-Black */
+@font-face {
+  font-family: "SchibstedGrotesk-Black";
+  src: url("/fonts/SchibstedGrotesk-Black.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+/* Définition de la police SchibstedGrotesk-BlackItalic */
+@font-face {
+  font-family: "SchibstedGrotesk-BlackItalic";
+  src: url("/fonts/SchibstedGrotesk-BlackItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Définition de la police SchibstedGrotesk-Bold */
+@font-face {
+  font-family: "SchibstedGrotesk-Bold";
+  src: url("/fonts/SchibstedGrotesk-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+/* Définition de la police SchibstedGrotesk-BoldItalic */
+@font-face {
+  font-family: "SchibstedGrotesk-BoldItalic";
+  src: url("/fonts/SchibstedGrotesk-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Définition de la police SchibstedGrotesk-ExtraBold */
+@font-face {
+  font-family: "SchibstedGrotesk-ExtraBold";
+  src: url("/fonts/SchibstedGrotesk-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+/* Définition de la police SchibstedGrotesk-ExtraBoldItalic */
+@font-face {
+  font-family: "SchibstedGrotesk-ExtraBoldItalic";
+  src: url("/fonts/SchibstedGrotesk-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+/* Définition de la police SchibstedGrotesk-Italic */
+@font-face {
+  font-family: "SchibstedGrotesk-Italic";
+  src: url("/fonts/SchibstedGrotesk-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+/* Définition de la police SchibstedGrotesk-Medium */
+@font-face {
+  font-family: "SchibstedGrotesk-Medium";
+  src: url("/fonts/SchibstedGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Définition de la police SchibstedGrotesk-MediumItalic */
+@font-face {
+  font-family: "SchibstedGrotesk-MediumItalic";
+  src: url("/fonts/SchibstedGrotesk-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+/* Définition de la police SchibstedGrotesk-Regular */
+@font-face {
+  font-family: "SchibstedGrotesk-Regular";
+  src: url("/fonts/SchibstedGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Définition de la police SchibstedGrotesk-SemiBold */
+@font-face {
+  font-family: "SchibstedGrotesk-SemiBold";
+  src: url("/fonts/SchibstedGrotesk-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+/* Définition de la police SchibstedGrotesk-SemiBoldItalic */
+@font-face {
+  font-family: "SchibstedGrotesk-SemiBoldItalic";
+  src: url("/fonts/SchibstedGrotesk-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+body {
+  background-color: #1B1A17;
+  height: 100vh;
+  margin: 1vw 2vw 0 2vw;
+  box-sizing: border-box;
+}
+body h1 {
+  color: rgb(231, 226, 226);
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: rgb(231, 226, 226);
+  font-size: 10rem;
+  font-family: SchibstedGrotesk-Medium;
+}
+header nav {
+  width: 28vw;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 5rem;
+  color: rgb(231, 226, 226);
+  font-family: SchibstedGrotesk-Regular;
+}
 
 /*# sourceMappingURL=style.css.map */
