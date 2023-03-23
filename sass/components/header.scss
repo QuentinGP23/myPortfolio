@@ -4,23 +4,94 @@ header{
     align-items: center;
     .logo{
         color: $font-color-main;
-        font-size: 10rem;
+        font-size: 2rem;
         font-family: SchibstedGrotesk-Medium;
     }
-    nav{
-        width: 28vw;
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            li{
-                a{
-                    text-decoration: none;
-                    font-size: 5rem;
-                    color: $font-color-main;
-                    font-family: SchibstedGrotesk-Regular;
+        nav{
+            width: 50vw;
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                li{
+                    margin-left: 2vw;
+                    a{
+                        text-decoration: none;
+                        color: $font-color-main;
+                        font-family: SchibstedGrotesk-Regular;
+
+                    }
                 }
             }
         }
-    }
+        ////////////////////////////////////////////////
+        .toggleIcon{
+            width: 33px;
+            cursor: pointer;
+        }
+        //////////////////////////////////////////////////////////////////////////////////
+        @media only screen and (max-width: 991px) {
+            nav{
+                position: absolute;
+                top: 25%;
+                height: 50vh;
+                left: 0;
+                width: 100%;
+                ul{
+                    flex-direction: column;
+                    align-items: center;
+                    padding-inline-start: 0;
+                    li{
+                        margin-bottom: 10vh;
+                        a{
+                            font-size: 2rem;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+// //////////////////////////////////////////////////////////////////////////////////////////////
+        @media only screen and (min-width: 991px) {
+            nav{
+                display: block;
+                width: 50vw;
+            ul{
+                justify-content: flex-end;
+                li{
+                    margin-left: 2vw;
+                    a{
+                        font-size: 1.5rem;
+                        display:inline-block;
+                        transition-property: transform;
+                        transition: 0.25s ease;
+
+                        &:after{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        transform: rotateY(90deg);
+                        transition:transform 0.25s linear;
+                        width: 100%;
+                        border-top: 2px solid $font-color-main;
+                        }
+
+                        &:hover{
+                            transform: scale(1);
+                        }
+                        &:hover:after{
+                            transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+            }
+            .logo{
+                font-size: 5rem;
+            }
+            .toggleIcon{
+                display: none;
+            }
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////
 }
