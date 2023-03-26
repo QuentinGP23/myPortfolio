@@ -10,15 +10,12 @@ header{
         nav{
             width: 50vw;
             ul{
-                list-style: none;
-                display: flex;
+                @include list-style-header-footer-ul;
                 justify-content: flex-end;
                 li{
                     margin-left: 2vw;
                     a{
-                        text-decoration: none;
-                        color: $font-color-main;
-                        font-family: SchibstedGrotesk-Regular;
+                        @include list-style-header-footer-a;
                     }
                 }
             }

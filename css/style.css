@@ -92,8 +92,13 @@ body {
 body h1, body h2, body p {
   color: rgb(231, 226, 226);
   font-family: SchibstedGrotesk-Regular;
+}
+body h1 {
   text-transform: uppercase;
   font-size: 3rem;
+}
+body main {
+  height: 90vh;
 }
 
 @media only screen and (min-width: 991px) {
