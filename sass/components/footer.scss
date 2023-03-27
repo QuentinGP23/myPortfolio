@@ -7,6 +7,16 @@ footer{
         text-align: center;
         margin:0 0 1em 0;
     }
+    .footer-links{
+        ul{
+            li{
+                a{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    
     .footer-container{
         ul{
             @include list-style-header-footer-ul;
@@ -32,7 +42,7 @@ footer{
             display: flex;
             justify-content: center;
             a:not(:last-child){
-                margin-right:1vw;
+                margin-right:8vw;
             }
         }
     }
@@ -46,7 +56,6 @@ footer{
         ul{
             li{
                 a{
-                    font-size: .8rem;
                     transition: all .2s ease-in-out;
                     &:hover{
                         color: $font-color-hover;
@@ -60,6 +69,9 @@ footer{
             align-items: center;
             .footer-rs{
                 margin-right: 2em;
+                a:not(:last-child){
+                    margin-right:1vw;
+                }
                 .fa{
                     font-size: 2.2em;
                     transition: all .3s ease-in-out;

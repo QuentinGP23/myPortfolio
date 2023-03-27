@@ -35,7 +35,7 @@ body{
         pointer-events: none;
         transform: translate(-120%, -120%);
         z-index: 9999;
-        mix-blend-mode: difference;
+        mix-blend-mode:color-burn;
         background-color: $font-color-main;
       }
 }
