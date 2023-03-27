@@ -4,7 +4,7 @@ header{
     align-items: center;
     .logo{
         color: $font-color-main;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-family: SchibstedGrotesk-Medium;
     }
         nav{
@@ -62,7 +62,6 @@ header{
                         display:inline-block;
                         transition-property: transform;
                         transition: 0.25s ease;
-
                         &:after{
                         position: absolute;
                         content: '';
@@ -84,7 +83,7 @@ header{
             }
             }
             .logo{
-                font-size: 4rem;
+                font-size: 3.5rem;
             }
             .toggleIcon{
                 display: none;
