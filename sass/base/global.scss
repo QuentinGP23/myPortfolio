@@ -7,6 +7,7 @@ body{
     height: 500vh;
     box-sizing: border-box;
     position: relative;
+    overflow-x: hidden;
     h1, h2, h3, p{
         color: $font-color-main;
         font-family: $main-font;
@@ -31,7 +32,23 @@ body{
         text-decoration: none;
     }
 }
-
+.main-buton{
+  color: $background-color;
+  background-color: $font-color-main;
+  width: 15vw;
+  height: 8vh;
+  border: none;
+  font-family: $main-font;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    color: $font-color-main;
+    background-color: $font-color-secondaire;
+  }
+}
 @media only screen and (min-width: 991px) {
     body{
         margin: 2vw 2vw 0 2vw;

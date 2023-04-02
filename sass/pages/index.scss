@@ -9,6 +9,16 @@
         margin-bottom: 2em;
     }
 }
+  .h2{
+    position: relative;
+    font-size: 3.5rem;
+  }
+  .my-work{
+    top: 5%;
+  }
+  .aboutme{
+    top: 20%;
+  }
   
 .work{
     position: relative;
@@ -37,10 +47,31 @@
             background-position: center;
             background-size: 105%;
             transition: all .4s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .details{
+                color: $background-color;
+                background-color: $font-color-main;
+                width: 20%;
+                height: 20%;
+                border: none;
+                font-family: $main-font;
+                font-size: 1em;
+                text-transform: uppercase;
+                font-weight: bold;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+            }
             &:hover{
                 background-size: 107%;
-                filter: blur(1px) grayscale(20%);
+                filter:grayscale(50%);
                 cursor: pointer;
+                .details{
+                    opacity: 1;
+                    filter:grayscale(-50%);
+                }
                 .custom-cursor{
                     display: none;
                 }
@@ -48,7 +79,87 @@
         }
     }
     }
-
+    .mb-1{
+        margin-bottom: 2em;
+    }
+    .aboutme{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .resumeme{
+            width: 40%;
+            position: relative;
+            top: 3vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 50%;
+                border-radius: 10%;
+                margin-bottom: 2em;
+            }
+        }
+        .skills{
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            h3{
+                height: 50%;
+                border-bottom: 2px solid $font-color-main;
+            }
+            p{
+                height: fit-content;
+                padding-top:.5em;
+                padding-bottom: .5em;
+                border-bottom: 1px solid $font-color-secondaire;
+            }
+        }
+    }
+    .scroll{
+        position: relative;
+        left: 0;
+        top: 50%;
+        width: 100vw;
+        height: fit-content;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        font-size: 3em;
+        transition: all 1s;
+        &:hover{
+            h2{
+                color: $font-color-secondaire;
+            }
+            i{
+                color: $font-color-secondaire;
+            }
+        }
+        h2 {
+            font-weight: normal;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: all .3s;
+            animation: scroll 10s linear infinite;
+            i{
+                color: $font-color-main;
+                font-weight: 400;
+                margin: 0 1em 0 1em;
+                transition: all .3s;
+            }
+          }
+    }
+    @keyframes scroll {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
     @media only screen and (min-width: 991px) {
         .work{
             .work-card{
@@ -75,5 +186,20 @@
         }
         .img{
             margin-bottom: 1em;
+        }
+        .aboutme{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .resumeme{
+                width: 100%;
+                position: relative;
+                top: 2vh;
+            }
+            .skills{
+                position: relative;
+                top: 5vh;
+                width: 100%;
+            }
         }
       }
