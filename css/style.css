@@ -90,7 +90,7 @@ html {
 body {
   background-color: #fbead1;
   margin: 3vw 4vw 0 4vw;
-  height: 500vh;
+  padding-bottom: 60vh;
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
@@ -103,9 +103,6 @@ body h1, body h2, body h3, body p {
 body h1 {
   text-transform: uppercase;
   font-size: 3rem;
-}
-body main {
-  height: 90vh;
 }
 body main .return {
   width: 2rem;
@@ -522,11 +519,11 @@ footer .footer-container .footer-rs a:not(:last-child) {
 }
 
 .my-work {
-  top: 5%;
+  top: 5vh;
 }
 
 .aboutme {
-  top: 20%;
+  top: 20vh;
 }
 
 .work {
@@ -630,7 +627,7 @@ footer .footer-container .footer-rs a:not(:last-child) {
 .scroll {
   position: relative;
   left: 0;
-  top: 50%;
+  top: 30vh;
   width: 100vw;
   height: fit-content;
   box-sizing: border-box;

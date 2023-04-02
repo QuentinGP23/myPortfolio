@@ -4,7 +4,7 @@ html{
 body{
     background-color: $background-color;
     margin: 3vw 4vw 0 4vw;
-    height: 500vh;
+    padding-bottom: 60vh;
     box-sizing: border-box;
     position: relative;
     overflow-x: hidden;
@@ -18,7 +18,6 @@ body{
         font-size: 3rem;
     }
     main{
-        height: 90vh;//test
         .return{
             width: 2rem;
             display: block;
