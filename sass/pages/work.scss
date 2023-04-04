@@ -32,10 +32,16 @@
         margin-top: 1em;
         width: 95vw;
         height: 86vh;
-        background-image: url(/img/png/creativeHub.png);
+        background-image: url(/img/png/chub.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
+    }
+    #main-img-poke{
+        background-image: url(/img/png/mangamain.png);
+    }
+    #main-img-manga{
+        background-image: url(/img/jpg/poke.jpg);
     }
     .work-infos{
         margin-top: 1em;
@@ -61,6 +67,32 @@
         #work-1-2{
             display: none;
         }
+    }
+}
+.img-works{
+    margin-top: 5em;
+    width: 100%;
+    .imgw{
+        width: 95vw;
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+   }
+    #img1{
+        background-image: url(/img/png/chub.png);
+    }
+    #img2{
+        background-image: url(/img/png/chub.png);
+    }
+    #img3{
+        background-image: url(/img/png/chub.png);
+    }
+    #img1-poke{
+        background-image: url(/img/png/poked.png);
+    }
+    #img2-poke{
+        background-image: url(/img/png/poked.png);
     }
 }
 @media only screen and (min-width: 991px) {

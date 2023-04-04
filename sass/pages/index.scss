@@ -1,3 +1,6 @@
+#mainIndex{
+    padding-bottom: 37em;
+}
 .heroPres{
     position: relative;
     top: 5vh;
@@ -39,10 +42,18 @@
             width: fit-content;
             margin-bottom: 1em;
           }
+        #img-ch{
+            background-image: url(/img/png/chub.png);
+        }
+        #img-poke{
+            background-image: url(/img/jpg/poke.jpg);
+        }
+        #img-manga{
+            background-image: url(/img/png/mangamain.png);
+        }
         .img{
             width: 90vw;
             height: 17vh;
-            background-image: url(/img/png/creativeHub.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: 105%;
@@ -66,11 +77,11 @@
             }
             &:hover{
                 background-size: 107%;
-                filter:grayscale(50%);
+                // filter:grayscale(50%);
                 cursor: pointer;
                 .details{
                     opacity: 1;
-                    filter:grayscale(-50%);
+                    // filter:grayscale(-50%);
                 }
                 .custom-cursor{
                     display: none;
@@ -119,9 +130,9 @@
         }
     }
     .scroll{
-        position: relative;
+        position: absolute;
         left: 0;
-        top: 30vh;
+        bottom: 4em;
         width: 100vw;
         height: fit-content;
         box-sizing: border-box;
@@ -176,8 +187,16 @@
             }
         }
     }
+    @media (max-width: 1300px) {
+        #mainIndex{
+            padding-bottom: 29em;
+        }
+    }   
 
     @media (max-width: 768px) {
+        .scroll{
+            display: none;
+        }
         .grid-container {
           grid-template-columns: 1fr;
         }

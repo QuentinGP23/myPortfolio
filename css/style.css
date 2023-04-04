@@ -90,7 +90,6 @@ html {
 body {
   background-color: #fbead1;
   margin: 3vw 4vw 0 4vw;
-  padding-bottom: 60vh;
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
@@ -103,6 +102,9 @@ body h1, body h2, body h3, body p {
 body h1 {
   text-transform: uppercase;
   font-size: 3rem;
+}
+body main {
+  padding-bottom: 10em;
 }
 body main .return {
   width: 2rem;
@@ -120,8 +122,11 @@ body a {
   color: #fbead1;
   background-color: #1B1A17;
   width: 15vw;
+  min-width: 200px;
   height: 8vh;
+  min-height: 40px;
   border: none;
+  margin-top: 1em;
   font-family: SchibstedGrotesk-Regular;
   font-size: 1em;
   text-transform: uppercase;
@@ -329,7 +334,7 @@ footer .footer-container ul li a {
 footer .footer-container ul li:not(:last-child) {
   margin-bottom: 0.5em;
 }
-footer .footer-container .fa {
+footer .footer-container .fa-brands {
   font-size: 2em;
 }
 footer .footer-container .footer-rs {
@@ -361,11 +366,11 @@ footer .footer-container .footer-rs a:not(:last-child) {
   footer .footer-container .footer-rs a:not(:last-child) {
     margin-right: 1vw;
   }
-  footer .footer-container .footer-rs .fa {
+  footer .footer-container .footer-rs .fa-brands {
     font-size: 2.2em;
     transition: all 0.3s ease-in-out;
   }
-  footer .footer-container .footer-rs .fa:hover {
+  footer .footer-container .footer-rs .fa-brands:hover {
     transform: scale(1.3, 1.3);
   }
 }
@@ -501,6 +506,10 @@ footer .footer-container .footer-rs a:not(:last-child) {
   opacity: 1;
 }
 
+#mainIndex {
+  padding-bottom: 37em;
+}
+
 .heroPres {
   position: relative;
   top: 5vh;
@@ -544,10 +553,18 @@ footer .footer-container .footer-rs a:not(:last-child) {
   width: fit-content;
   margin-bottom: 1em;
 }
+.work .work-card #img-ch {
+  background-image: url(/img/png/chub.png);
+}
+.work .work-card #img-poke {
+  background-image: url(/img/jpg/poke.jpg);
+}
+.work .work-card #img-manga {
+  background-image: url(/img/png/mangamain.png);
+}
 .work .work-card .img {
   width: 90vw;
   height: 17vh;
-  background-image: url(/img/png/creativeHub.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 105%;
@@ -572,12 +589,10 @@ footer .footer-container .footer-rs a:not(:last-child) {
 }
 .work .work-card .img:hover {
   background-size: 107%;
-  filter: grayscale(50%);
   cursor: pointer;
 }
 .work .work-card .img:hover .details {
   opacity: 1;
-  filter: grayscale(-50%);
 }
 .work .work-card .img:hover .custom-cursor {
   display: none;
@@ -625,9 +640,9 @@ footer .footer-container .footer-rs a:not(:last-child) {
 }
 
 .scroll {
-  position: relative;
+  position: absolute;
   left: 0;
-  top: 30vh;
+  bottom: 4em;
   width: 100vw;
   height: fit-content;
   box-sizing: border-box;
@@ -677,7 +692,15 @@ footer .footer-container .footer-rs a:not(:last-child) {
     display: none;
   }
 }
+@media (max-width: 1300px) {
+  #mainIndex {
+    padding-bottom: 29em;
+  }
+}
 @media (max-width: 768px) {
+  .scroll {
+    display: none;
+  }
   .grid-container {
     grid-template-columns: 1fr;
   }
@@ -738,10 +761,16 @@ footer .footer-container .footer-rs a:not(:last-child) {
   margin-top: 1em;
   width: 95vw;
   height: 86vh;
-  background-image: url(/img/png/creativeHub.png);
+  background-image: url(/img/png/chub.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+.work-section #main-img-poke {
+  background-image: url(/img/png/mangamain.png);
+}
+.work-section #main-img-manga {
+  background-image: url(/img/jpg/poke.jpg);
 }
 .work-section .work-infos {
   margin-top: 1em;
@@ -767,6 +796,33 @@ footer .footer-container .footer-rs a:not(:last-child) {
 }
 .work-section .work-infos #work-1-2 {
   display: none;
+}
+
+.img-works {
+  margin-top: 5em;
+  width: 100%;
+}
+.img-works .imgw {
+  width: 95vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.img-works #img1 {
+  background-image: url(/img/png/chub.png);
+}
+.img-works #img2 {
+  background-image: url(/img/png/chub.png);
+}
+.img-works #img3 {
+  background-image: url(/img/png/chub.png);
+}
+.img-works #img1-poke {
+  background-image: url(/img/png/poked.png);
+}
+.img-works #img2-poke {
+  background-image: url(/img/png/poked.png);
 }
 
 @media only screen and (min-width: 991px) {
