@@ -562,6 +562,9 @@ footer .footer-container .footer-rs a:not(:last-child) {
 .work .work-card #img-manga {
   background-image: url(/img/png/mangamain.png);
 }
+.work .work-card #img-datav {
+  background-image: url(/img/jpg/datavisu.jpg);
+}
 .work .work-card .img {
   width: 90vw;
   height: 17vh;
