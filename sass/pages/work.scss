@@ -38,10 +38,14 @@
         background-size: 100%;
     }
     #main-img-poke{
-        background-image: url(/img/png/mangamain.png);
+        
+        background-image: url(/img/jpg/poke.jpg);
     }
     #main-img-manga{
-        background-image: url(/img/jpg/poke.jpg);
+        background-image: url(/img/png/mangamain.png);
+    }
+    #main-img-data{
+        background-image: url(/img/png/datavisu.png);
     }
     .work-infos{
         margin-top: 1em;
