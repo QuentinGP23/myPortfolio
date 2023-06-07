@@ -694,16 +694,25 @@ footer .footer-container .footer-rs a:not(:last-child) {
   .work .work-card .img:hover .custom-cursor {
     display: none;
   }
+  #tqt420 {
+    width: 19vw;
+    margin-bottom: 1em;
+  }
 }
 @media (max-width: 1300px) {
   #mainIndex {
     padding-bottom: 29em;
   }
-}
-@media (max-width: 768px) {
   .scroll {
     display: none;
   }
+}
+@media (max-width: 991px) {
+  .scroll {
+    bottom: 3em;
+  }
+}
+@media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
@@ -816,19 +825,20 @@ footer .footer-container .footer-rs a:not(:last-child) {
   background-size: 100%;
 }
 .img-works #img1 {
-  background-image: url(/img/png/chub.png);
+  background-image: url(/img/png/creativeHub.png);
 }
 .img-works #img2 {
-  background-image: url(/img/png/chub.png);
+  background-image: url(/img/png/chub1.png);
 }
 .img-works #img3 {
-  background-image: url(/img/png/chub.png);
+  background-image: url(/img/png/chub2.png);
+  background-position: top center;
 }
 .img-works #img1-poke {
   background-image: url(/img/png/poked.png);
 }
 .img-works #img2-poke {
-  background-image: url(/img/png/poked.png);
+  background-image: url(/img/png/poke2.png);
 }
 
 @media only screen and (min-width: 991px) {

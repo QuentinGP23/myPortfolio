@@ -189,17 +189,25 @@
                 }
             }
         }
+        #tqt420{
+            width: 19vw;
+            margin-bottom: 1em;
+        }
     }
     @media (max-width: 1300px) {
         #mainIndex{
             padding-bottom: 29em;
         }
-    }   
-
-    @media (max-width: 768px) {
         .scroll{
             display: none;
         }
+    }   
+    @media (max-width: 991px){
+        .scroll{
+            bottom: 3em;
+        }
+    }
+    @media (max-width: 768px) {
         .grid-container {
           grid-template-columns: 1fr;
         }
