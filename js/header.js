@@ -10,12 +10,12 @@ toggleIcon.addEventListener("click", function() {
     main.style.display = "block";
     body.style.overflow = "auto";
     footer.style.display = "flex";
-    toggleIcon.src = "/img/icons/icons8-menu.svg";
+    toggleIcon.src = "./img/icons/icons8-menu.svg";
   } else {
     nav.style.display = "block";
     main.style.display = "none";
     body.style.overflow = "hidden";
     footer.style.display = "none";
-    toggleIcon.src = "/img/icons/icons8-menu_close.svg";
+    toggleIcon.src = "./img/icons/icons8-menu_close.svg";
   }
 });
